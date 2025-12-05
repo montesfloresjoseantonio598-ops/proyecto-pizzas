@@ -1,11 +1,9 @@
-/* Reset CSS */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Estilos generales */
 body {
     font-family: Arial, sans-serif;
     background-color: #2b2b2b;
@@ -18,7 +16,6 @@ body {
     overflow: hidden;
 }
 
-/* Contenedor principal */
 .container {
     position: relative;
     width: 100%;
@@ -26,28 +23,25 @@ body {
     text-align: center;
 }
 
-/* Logo en la parte superior derecha, aún más grande */
 .logo {
     position: absolute;
     top: 20px;
-    right: 20px;  /* Colocado a la derecha */
-    width: 400px; /* Tamaño aún más grande */
+    right: 20px;  
+    width: 400px; 
     animation: fadeIn 1s ease-out;
 }
 
-/* Imagen de pizza */
 .pizza-img {
-    width: 100vw; /* 100% del ancho de la ventana */
-    height: 100vh; /* 100% de la altura de la ventana */
-    object-fit: cover; /* Asegura que la imagen cubra el área sin distorsionarse */
+    width: 100vw; 
+    height: 100vh; 
+    object-fit: cover; 
     position: absolute;
     top: 0;
     left: 0;
-    z-index: -1; /* Colocamos la pizza detrás de todo */
+    z-index: -1; 
     animation: zoomIn 1s ease-out;
 }
 
-/* Estilo del botón */
 .cta-btn {
     background-color: #f25c5c;
     color: #fff;
@@ -56,21 +50,19 @@ body {
     border: none;
     border-radius: 40px;
     position: absolute;
-    bottom: 50px; /* Ajustado para que quede más abajo */
-    left: 50%; /* Centramos el botón */
-    transform: translateX(50%); /* Movemos el botón ligeramente a la derecha */
+    bottom: 50px; 
+    left: 50%;
+    transform: translateX(50%); 
     cursor: pointer;
     font-weight: bold;
     transition: all 0.3s ease;
 }
 
-/* Efecto hover para el botón */
 .cta-btn:hover {
     background-color: #d14949;
-    transform: scale(1.1) translateX(50%); /* Efecto hover moviendo a la derecha */
+    transform: scale(1.1) translateX(50%); 
 }
 
-/* Animación para que el logo se deslice desde la izquierda */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -82,7 +74,6 @@ body {
     }
 }
 
-/* Animación para que la pizza se haga un zoom desde pequeño */
 @keyframes zoomIn {
     from {
         opacity: 0;
@@ -94,7 +85,6 @@ body {
     }
 }
 
-/* Responsividad para pantallas más pequeñas */
 @media (max-width: 1200px) {
     .logo {
         width: 350px; /* Ajuste para pantallas medianas */

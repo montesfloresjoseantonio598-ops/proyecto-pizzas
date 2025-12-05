@@ -51,7 +51,6 @@ header button:hover {
     background-color: #d32f2f;
 }
 
-/* Navbar */
 .navbar {
     display: flex;
     justify-content: center;
@@ -142,7 +141,6 @@ header button:hover {
     transform: scale(1.05);
 }
 
-/* Media Queries for Responsiveness */
 @media (max-width: 768px) {
     header input[type="text"] {
         width: 200px;
